@@ -6,8 +6,8 @@ var BasicCard = require("./basicCard.js");
 var ClozeCard = require("./clozeCard.js");
 
 switch(cardType){
-    case "cloze": var myBasic = new BasicCard(process.argv[3], process.argv[4]);
+    case "basic": var myBasic = new BasicCard(process.argv[3], process.argv[4]);
     break;
-    case "basic": var myCloze = new ClozeCard(process.argv[3], process.argv[4]);
+    case "cloze": var myCloze = new ClozeCard(process.argv[3], process.argv[4]);
     break;
 }
