@@ -1,14 +1,7 @@
 //USER INTERFACE
-var nodeArgs = process.argv;
-var makeCard = false;
 var inquirer = require("inquirer");
-
-// Load the NPM Package inquirer
-var inquirer = require("inquirer");
-// Create a "Prompt" with a series of questions.
 inquirer
 	.prompt([
-		// Here we create a basic text prompt.
 		{
 			type: "list",
 			message: "What type of flashcard?",
@@ -47,8 +40,8 @@ inquirer
 	.then(function(inquirerResponse) {
 		// If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
 		if (inquirerResponse.confirm) {
-            var cardType = inquirerResponse.card;
-            var q = inquirerResponse.question;
+			var cardType = inquirerResponse.card;
+			var q = inquirerResponse.question;
 			var a = inquirerResponse.answer;
 			var BasicCard = require("./basicCard.js");
 			var ClozeCard = require("./clozeCard.js");
@@ -60,7 +53,8 @@ inquirer
 					var myCloze = new ClozeCard(q, a);
 					break;
 			}
-		} else {
-			console.log("\nThat's okay " + inquirerResponse.username + ", come again when you are more sure.\n");
-        }
-    });
+		}
+		else {
+			console.log("Card was not saved!");
+		}
+	});
