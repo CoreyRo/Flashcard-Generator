@@ -1,9 +1,9 @@
 //CLOZE CARDS
 
-var ClozeCard = function(question,answer){
-    this.fulltext = question;
-    this.cloze = answer.toLowerCase();
-    this.partial = question.replace(answer, "...");
+var ClozeCard = function(text,cloze){
+    this.fulltext = text;
+    this.cloze = cloze.toLowerCase();
+    this.partial = text.replace(cloze, "...");
     console.log("\n***************CLOZE*CARD***************");
     console.log("Full Text: " + this.fulltext + "\nPartial Text: " + this.partial + "\nCloze: " + this.cloze);
 };
