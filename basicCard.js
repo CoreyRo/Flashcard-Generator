@@ -1,7 +1,7 @@
 //BASIC CARDS
 
 var BasicCard = function(question,answer){
-    this.front = question.toLowerCase();
+    this.front = question;
     this.back = answer.toLowerCase();
     console.log("\n***************BASIC*CARD***************");
     console.log("Front: " + this.front + "\nBack: " + this.back);

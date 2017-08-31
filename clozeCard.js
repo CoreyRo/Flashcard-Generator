@@ -2,7 +2,7 @@
 
 var ClozeCard = function(question,answer){
     this.fulltext = question;
-    this.cloze = answer;
+    this.cloze = answer.toLowerCase();
     this.partial = question.replace(answer, "...");
     console.log("\n***************CLOZE*CARD***************");
     console.log("Full Text: " + this.fulltext + "\nPartial Text: " + this.partial + "\nCloze: " + this.cloze);
