@@ -1,10 +1,10 @@
 //BASIC CARDS
 
 var BasicCard = function(question,answer){
-    this.question = question.toLowerCase();
-    this.answer = answer.toLowerCase();
-    console.log(this.question);
-    console.log(this.answer);
+    this.front = question.toLowerCase();
+    this.back = answer.toLowerCase();
+    console.log("\n***************BASIC*CARD***************");
+    console.log("Front: " + this.front + "\nBack: " + this.back);
 };
 
 var basicOne = new BasicCard(

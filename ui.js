@@ -9,8 +9,8 @@ for (var i = 2; i < nodeArgs.length; i++) {
 }
 
 console.log(guess);
-console.log("cloze answer " + ClozeCard.answer)
-console.log("basic answer " + BasicCard.answer)
+console.log("cloze answer " + ClozeCard.cloze);
+console.log("basic answer " + BasicCard.back);
 
 // if(guess === clozeCard.answer || guess === clozeCard.answer){
 //     console.log("Correct");
