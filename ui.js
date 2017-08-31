@@ -1,7 +1,7 @@
 //USER INTERFACE
 var nodeArgs = process.argv;
-var basicCard = require("./basicCard.js");
-var clozeCard = require("./clozeCard.js");
+var BasicCard = require("./basicCard.js");
+var ClozeCard = require("./clozeCard.js");
 var guess = "";
 
 for (var i = 2; i < nodeArgs.length; i++) {
@@ -9,8 +9,8 @@ for (var i = 2; i < nodeArgs.length; i++) {
 }
 
 console.log(guess);
-console.log("cloze answer " + clozeCard.answer)
-console.log("basic answer " + basicCard.answer)
+console.log("cloze answer " + ClozeCard.answer)
+console.log("basic answer " + BasicCard.answer)
 
 // if(guess === clozeCard.answer || guess === clozeCard.answer){
 //     console.log("Correct");
